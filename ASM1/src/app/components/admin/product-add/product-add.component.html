@@ -1,0 +1,13 @@
+<div class="text-center">
+    Admin Product Add
+
+    <form (ngSubmit)="onSubmit()" style="width: 400px; margin: 0 auto;">
+        <div class="mb-3">
+            <input type="text" name="name" [(ngModel)]="product.name" class="form-control" placeholder="name">
+        </div>
+        <div class="mb-3">
+            <input type="number" name="price" [(ngModel)]="product.price" class="form-control" placeholder="price">
+        </div>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</div>

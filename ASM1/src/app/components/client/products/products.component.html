@@ -1,0 +1,12 @@
+<div class="container text-center">
+    <h1>Product List</h1>
+
+    <div class="row">
+        <div class="col-3" *ngFor="let pro of products">
+            <a routerLink="{{pro.id}}/detail">
+                <h6>{{pro.name}}</h6>
+            </a>
+            <p style="color: red;">${{pro.price}}</p>
+        </div>
+    </div>
+</div>
